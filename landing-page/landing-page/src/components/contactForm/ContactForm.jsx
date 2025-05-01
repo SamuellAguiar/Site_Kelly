@@ -60,7 +60,7 @@ function ContactForm() {
                <div className="form-wrapper" id="contato">
                     <div className="form-container">
                          <div className="form-left">
-                              <h2>Contate-Nos</h2>
+                              <h2>Contate-nos</h2>
                               <p className="subtitle">Entre em contato para saber mais sobre o curso</p>
 
                               <form onSubmit={handleSubmit(onSubmit)}>
