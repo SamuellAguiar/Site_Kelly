@@ -94,7 +94,7 @@ function ContactForm() {
                                    />
                                    {errors.message && <span className="error">{errors.message.message}</span>}
 
-                                   <button type="submit">SEND</button>
+                                   <button type="submit">ENVIAR</button>
                               </form>
                          </div>
 
