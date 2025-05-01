@@ -15,7 +15,7 @@ body {
 .form-container {
      background-color: rgba(255, 255, 255, 0.85);
      /* Fundo mais transparente */
-     background-image: url('formBack.png');
+     background-image: url('/formBack.png');
      background-size: cover;
      background-position: center;
      border-radius: 12px;
@@ -174,7 +174,7 @@ button:hover {
           flex-direction: column;
           padding: 20px;
           gap: 20px;
-          background-image: url('formBack.png'); /* força o fundo */
+          background-image: url('/formBack.png'); /* força o fundo */
           background-size: cover;
           background-position: center;
      }

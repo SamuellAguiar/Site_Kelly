@@ -32,6 +32,9 @@ html {
 @media (max-width: 768px) {
   .home-wrapper {
     flex-direction: column;
+    display: block;
+    margin: 0;
+    padding: 0;
     height: auto;
   }
 
