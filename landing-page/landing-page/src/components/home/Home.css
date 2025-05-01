@@ -12,37 +12,45 @@ html {
 }
 
 .home-wrapper {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  width: 100%;
-  min-height: 100vh;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start; /* Evita espaços verticais desnecessários */
+  justify-content: space-between;
+  /* ou center, se preferir */
+  align-items: center;
 }
 
 .home-img {
-  flex: 1;
-  min-width: 300px;
+  width: 100vw;
   height: 100vh;
-  object-fit: cover; /* Preenche melhor sem espaço entre as imagens */
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
+  /* cor de fundo parecida com a da imagem para "disfarçar" bordas */
 }
+
+
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   .home-wrapper {
     flex-direction: column;
-    display: block;
+    display: flex;
+    /* <- MANTÉM o Flexbox */
     margin: 0;
     padding: 0;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .home-img {
     width: 100vw;
     height: auto;
     max-height: none;
-    object-fit: cover;
+    object-fit: contain;
+    /* ou cover, dependendo do seu gosto */
     margin: 0;
     padding: 0;
   }
