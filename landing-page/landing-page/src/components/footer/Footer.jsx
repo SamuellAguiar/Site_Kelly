@@ -16,7 +16,7 @@ function Footer() {
                          <Language />
                     </a>
                </div>
-               <p className="footer-text">All Rights Reserved 2025</p>
+               <p className="footer-text">All Rights Reserved © 2025</p>
           </footer>
      );
 }

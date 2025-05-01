@@ -1,26 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.home-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.home-img {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
   .home-wrapper {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+    flex-direction: column;
+    height: auto; /* Altura automática para conter as imagens empilhadas */
   }
-  
+
   .home-img {
-    width: 50vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: top; /* Garante que o topo da imagem seja mantido visível */
+    width: 100vw;
+    height: auto; /* Altura automática para manter proporção */
+    max-height: 50vh; /* Limita a altura das imagens para caberem bem na tela */
   }
-  
+}
