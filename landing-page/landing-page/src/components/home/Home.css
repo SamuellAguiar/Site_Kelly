@@ -17,14 +17,15 @@ html {
   min-height: 100vh;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start; /* Evita espaços verticais desnecessários */
 }
 
 .home-img {
   flex: 1;
   min-width: 300px;
-  height: auto;
-  max-height: 100vh;
-  object-fit: contain;
+  height: 100vh;
+  object-fit: cover; /* Preenche melhor sem espaço entre as imagens */
+  display: block;
 }
 
 /* Responsividade para telas pequenas */
@@ -32,14 +33,14 @@ html {
   .home-wrapper {
     flex-direction: column;
     height: auto;
-    /* Altura automática para conter as imagens empilhadas */
   }
 
   .home-img {
     width: 100vw;
     height: auto;
-    /* Altura automática para manter proporção */
-    max-height: 50vh;
-    /* Limita a altura das imagens para caberem bem na tela */
+    max-height: none;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
 }
