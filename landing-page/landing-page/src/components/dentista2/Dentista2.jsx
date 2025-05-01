@@ -11,13 +11,11 @@ const Dentista2 = () => {
         </div>
         <div className="dentist2-texto">
           <h2>Kelly Krysley de Oliveira Aguiar</h2>
-          <p>
             <ul>
               <li><strong>Graduação:</strong> Universidade Federal de Juiz de Fora.</li>
               <li><strong>Especialização em Dentística:</strong> FOB - USP.</li>
               <li>Atua como especialista em dentistica em consultório, tendo também como foco a fotografia odontológica e o tratamento do bruxismo, por possuir atualizações nessas áreas.</li>
             </ul>
-          </p>
         </div>
       </div>
     </section>
