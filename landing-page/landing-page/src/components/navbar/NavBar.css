@@ -10,10 +10,10 @@
 }
 
 .logo img {
+  max-height: 70px;
   width: auto;
-  height: 100%;
-  max-width: 90px;
-  max-height: 90%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Ícone animado (hambúrguer / X) */
