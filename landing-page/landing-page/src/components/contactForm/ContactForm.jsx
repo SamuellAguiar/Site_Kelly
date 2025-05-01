@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
+import { Instagram, Email, Language } from '@mui/icons-material';
 import './ContactForm.css';
 
 function ContactForm() {
@@ -56,7 +57,7 @@ function ContactForm() {
                     </div>
                )}
 
-               <div className="form-wrapper">
+               <div className="form-wrapper" id="contato">
                     <div className="form-container">
                          <div className="form-left">
                               <h2>contact</h2>
@@ -101,9 +102,17 @@ function ContactForm() {
 
                          <div className="form-right">
                               <p><strong>PHONE:</strong><br />0468 957 987</p>
-                              <p><strong>EMAIL:</strong><br />carol@thespacecube.com</p>
-                              <div className="social-icons">
-                                   <span>🔗</span><span>🔗</span><span>🔗</span>
+                              <p><strong>EMAIL:</strong><br />teste01@teste.0101</p>
+                                   <div className="footer-icons">
+                                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                             <Instagram />
+                                        </a>
+                                        <a href="mailto:example@email.com" >
+                                             <Email />
+                                        </a>
+                                        <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+                                             <Language />
+                                        </a>
                               </div>
                          </div>
                     </div>
