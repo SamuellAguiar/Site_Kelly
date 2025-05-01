@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 90px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+  max-width: 90px;
+  max-height: 90%;
+}
+
+/* Ícone animado (hambúrguer / X) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  gap: 5px;
+  z-index: 15;
+}
+
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.menu-icon.aberto span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.aberto span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.aberto span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Links de navegação */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #807064;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: #000;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    display: none;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  .navbar-links.ativo {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Fundo escurecido quando o menu está aberto */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

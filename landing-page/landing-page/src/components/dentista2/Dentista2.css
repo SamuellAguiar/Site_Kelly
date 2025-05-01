@@ -1,0 +1,44 @@
+.dentist2-section {
+    background-color: #C2B5AB;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dentist2-container {
+    display: flex;
+    max-width: 1000px;
+    background-color: #C2B5AB;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  
+  .dentist2-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dentist2-texto {
+    flex: 1;
+    color: #f4f4f4;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dentist2-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .dentist2-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,25 @@
+.scroll-to-top {
+     position: fixed;
+     bottom: 15px;
+     right: 15px;
+     background-color: rgba(0, 0, 0, 0.4);
+     /* mais transparente */
+     color: white;
+     border: none;
+     padding: 6px;
+     border-radius: 50%;
+     cursor: pointer;
+     z-index: 1000;
+     font-size: 14px;
+     line-height: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background-color 0.2s ease;
+     width: 28px;
+     height: 28px;
+}
+
+.scroll-to-top:hover {
+     background-color: rgba(0, 0, 0, 0.6);
+}
