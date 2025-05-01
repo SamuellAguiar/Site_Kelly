@@ -1,44 +1,69 @@
 .sobre-mim-section {
-    background-color: #C2B5AB; /* Verde escuro semelhante ao exemplo */
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
+  background-color: #C2B5AB;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-mim-container {
+  display: flex;
+  flex-direction: row;
+  /* padrão: imagem à esquerda */
+  max-width: 1000px;
+  background-color: #C2B5AB;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.sobre-mim-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-mim-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.sobre-mim-texto {
+  flex: 1;
+  color: #f4f4f4;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-mim-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobre-mim-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* === RESPONSIVO: imagem embaixo do texto === */
+@media (max-width: 768px) {
   .sobre-mim-container {
-    display: flex;
-    max-width: 1000px;
-    background-color: #C2B5AB;
-    border-radius: 20px;
-    overflow: hidden;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    /* texto em cima, imagem embaixo */
+    text-align: center;
   }
-  
-  .sobre-mim-image {
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .sobre-mim-texto {
-    flex: 1;
-    color: #f4f4f4;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px;
   }
-  
-  .sobre-mim-texto h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+  .sobre-mim-image img {
+    max-width: 80%;
   }
-  
-  .sobre-mim-texto p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
+}

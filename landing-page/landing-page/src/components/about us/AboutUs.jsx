@@ -7,12 +7,7 @@ const AboutUs = () => {
       <div className="sobre-mim-container">
         <div className="sobre-mim-image">
           {/* Substitua este SVG por outro quando tiver o definitivo */}
-          <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" rx="20" fill="#ccc" />
-            <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#666" fontSize="16">
-              Placeholder
-            </text>
-          </svg>
+          <img src="aboutUs-img.jpeg" alt="Imagem sobre o curso" className="aboutUs-img"/>
         </div>
         <div className="sobre-mim-texto">
           <h2>Sobre O Curso</h2>

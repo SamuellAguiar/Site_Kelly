@@ -7,6 +7,7 @@
 
 .dentist2-container {
   display: flex;
+  flex-direction: row;
   max-width: 1000px;
   background-color: #C2B5AB;
   border-radius: 20px;
@@ -27,10 +28,7 @@
   max-width: 300px;
   height: auto;
   border-radius: 30px;
-  background-color: #e3e3e3;
-  /* opcional, para simular placeholder */
 }
-
 
 .dentist2-texto {
   flex: 1;
@@ -49,4 +47,21 @@
 .dentist2-texto p {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .dentist2-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dentist2-img {
+    max-width: 80%;
+  }
+
+  .dentist2-texto {
+    padding: 20px;
+  }
 }
