@@ -1,4 +1,4 @@
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/NavBar';
 import Home from './components/home/Home';
 import AboutUs from './components/about us/AboutUs';
 import Dentista1 from './components/dentista1/Dentista1';
