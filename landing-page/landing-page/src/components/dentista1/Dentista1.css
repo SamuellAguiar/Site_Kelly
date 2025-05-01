@@ -16,11 +16,18 @@
   
   .dentist1-image {
     flex: 1;
-    min-width: 300px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+  }
+  
+  .dentist1-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 30px;
+    background-color: #e3e3e3; /* opcional, para simular placeholder */
   }
   
   .dentist1-texto {

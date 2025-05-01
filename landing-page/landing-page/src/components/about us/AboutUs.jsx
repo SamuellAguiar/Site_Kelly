@@ -17,7 +17,9 @@ const AboutUs = () => {
         <div className="sobre-mim-texto">
           <h2>Sobre O Curso</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel inventore rerum repellendus nobis distinctio sapiente excepturi incidunt temporibus laudantium reiciendis, beatae facilis in voluptate assumenda dignissimos. Eius, praesentium aliquam.
+            Resinas compostas em dentes anteriores por Kelly Aguiar e Laís Albergaria visa preparar estudantes e profissionais da odontologia a desenvolverem habilidades com a resina composta, que permitirão elevar o nível técnico dos procedimentos!
+            Unindo teoria e prática, sempre embasadas em uma odontologia ética e baseada em evidências, buscamos que os alunos sejam capacitados a realizar desde procedimentos mais básicos até procedimentos complexos de estratificação em dentes anteriores, com resultados o mais naturais possíveis!
+
           </p>
         </div>
       </div>

@@ -7,17 +7,12 @@ const Dentista2 = () => {
       <div className="dentist2-container">
         <div className="dentist2-image">
           {/* Substitua por imagem real depois */}
-          <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" rx="20" fill="#ccc" />
-            <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#666" fontSize="16">
-              Placeholder
-            </text>
-          </svg>
+          <img src="DSC_1249.jpg" alt="Dra. Kelly Krysley de Oliveira Aguiar" className="dentist2-img" />
         </div>
         <div className="dentist2-texto">
-          <h2>Dra. Laís Albergaria</h2>
+          <h2>Dra. Kelly Krysley de Oliveira Aguiar</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iure asperiores voluptatibus nisi a consequuntur deleniti explicabo doloribus. Vel amet veniam perferendis beatae, adipisci ducimus non sunt voluptatum consequatur dolore.
+            Graduada pela Universidade Federal de Juiz de Fora e especialista em dentística pela FOB-USP, a Dra Kelly atua na prática clínica da dentística desde 2017. Com cursos de atualização nas áreas de resina, fotografia odontológica e bruxismo.
           </p>
         </div>
       </div>
