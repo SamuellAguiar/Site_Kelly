@@ -1,5 +1,5 @@
 import React from "react";
-import "./dentista1.css";
+import "./Dentista1.css";
 
 const Dentista1 = () => {
   return (
