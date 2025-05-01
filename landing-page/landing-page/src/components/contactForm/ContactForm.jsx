@@ -60,39 +60,37 @@ function ContactForm() {
                <div className="form-wrapper" id="contato">
                     <div className="form-container">
                          <div className="form-left">
-                              <h2>contact</h2>
-                              <p className="subtitle">we want to hear from you</p>
+                              <h2>Contate-Nos</h2>
+                              <p className="subtitle">Entre em contato para saber mais sobre o curso</p>
 
                               <form onSubmit={handleSubmit(onSubmit)}>
                                    {/* Honeypot */}
                                    <input type="text" name="_gotcha" style={{ display: 'none' }} {...register('_gotcha')} />
 
-                                   <label>Send us an Email:</label>
-
                                    <input
                                         type="text"
-                                        placeholder="Name"
-                                        {...register('name', { required: 'Name is required' })}
+                                        placeholder="Nome"
+                                        {...register('name', { required: 'Nome é Necessário' })}
                                    />
                                    {errors.name && <span className="error">{errors.name.message}</span>}
 
                                    <input
                                         type="email"
-                                        placeholder="Email Address"
+                                        placeholder="E-mail de contato" 
                                         {...register('email', {
-                                             required: 'Email is required',
+                                             required: 'Email é Necessário',
                                              pattern: {
                                                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                                                  message: 'Invalid email format',
+                                                  message: 'Formato de email inválido',
                                              },
                                         })}
                                    />
                                    {errors.email && <span className="error">{errors.email.message}</span>}
 
                                    <textarea
-                                        placeholder="Message"
+                                        placeholder="Escreva sua mensagem aqui..."
                                         rows="5"
-                                        {...register('message', { required: 'Message is required' })}
+                                        {...register('message', { required: 'Mensagem é Necessária' })}
                                    />
                                    {errors.message && <span className="error">{errors.message.message}</span>}
 
@@ -101,7 +99,6 @@ function ContactForm() {
                          </div>
 
                          <div className="form-right">
-                              <p><strong>PHONE:</strong><br />0468 957 987</p>
                               <p><strong>EMAIL:</strong><br />teste01@teste.0101</p>
                                    <div className="footer-icons">
                                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

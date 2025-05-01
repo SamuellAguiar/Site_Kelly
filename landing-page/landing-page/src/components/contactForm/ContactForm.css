@@ -13,7 +13,11 @@ body {
 }
 
 .form-container {
-     background-color: #fff;
+     background-color: rgba(255, 255, 255, 0.85);
+     /* Fundo mais transparente */
+     background-image: url('formBack.png');
+     background-size: cover;
+     background-position: center;
      border-radius: 12px;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
      display: flex;
@@ -22,6 +26,8 @@ body {
      width: 100%;
      padding: 40px;
      gap: 40px;
+     color: #1f1f1f;
+     /* Letras mais visíveis */
 }
 
 .form-left {
@@ -35,7 +41,7 @@ body {
 
 .subtitle {
      font-style: italic;
-     color: #333;
+     color: #2c2c2c;
      margin-bottom: 20px;
 }
 
@@ -51,6 +57,13 @@ textarea {
      border: 1px solid #ccc;
      border-radius: 6px;
      font-size: 16px;
+     background-color: rgba(255, 255, 255, 0.95);
+     color: #000;
+}
+
+input::placeholder,
+textarea::placeholder {
+     color: #555;
 }
 
 button {
@@ -74,7 +87,7 @@ button:hover {
      justify-content: center;
      gap: 15px;
      font-size: 14px;
-     color: #444;
+     color: #2c2c2c;
 }
 
 .social-icons {

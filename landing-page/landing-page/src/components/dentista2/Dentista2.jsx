@@ -7,12 +7,16 @@ const Dentista2 = () => {
       <div className="dentist2-container">
         <div className="dentist2-image">
           {/* Substitua por imagem real depois */}
-          <img src="DSC_1249.jpg" alt="Dra. Kelly Krysley de Oliveira Aguiar" className="dentist2-img" />
+          <img src="dentista2.jpeg" alt="Dra. Kelly Krysley de Oliveira Aguiar" className="dentist2-img" />
         </div>
         <div className="dentist2-texto">
-          <h2>Dra. Kelly Krysley de Oliveira Aguiar</h2>
+          <h2>Kelly Krysley de Oliveira Aguiar</h2>
           <p>
-            Graduada pela Universidade Federal de Juiz de Fora e especialista em dentística pela FOB-USP, a Dra Kelly atua na prática clínica da dentística desde 2017. Com cursos de atualização nas áreas de resina, fotografia odontológica e bruxismo.
+            <ul>
+              <li><strong>Graduação:</strong> Universidade Federal de Juiz de Fora.</li>
+              <li><strong>Especialização em Dentística:</strong> FOB - USP.</li>
+              <li>Atua como especialista em dentistica em consultório, tendo também como foco, a fotografia odontológica e o tratamento do bruxismo por possuir atualizações nessas áreas.</li>
+            </ul>
           </p>
         </div>
       </div>

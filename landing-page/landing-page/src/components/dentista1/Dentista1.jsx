@@ -7,15 +7,19 @@ const Dentista1 = () => {
       <div className="dentist1-container">
 
         <div className="dentist1-texto">
-          <h2>Dra. Laís Santos Albergaria</h2>
+          <h2>Laís Santos Albergaria</h2>
           <p>
-            Graduada pela Universidade Federal de Juiz de Fora, especialista, mestre e doutora em dentística pela FOB - USP, a Dra Lais além de atuar como professora de Dentistica da graduação também atua na prática clínica do consultório.
+            <ul>
+              <li><strong>Graduação:</strong> Universidade Federal de Juiz de Fora.</li>
+              <li><strong>Especialização, mestrado e doutorado em Dentística:</strong> FOB - USP.</li>
+              <li>Atua como professora de Dentística na graduação e também na prática clínica em consultório.</li>
+            </ul>
           </p>
         </div>
 
         <div className="dentist1-image">
           {/* Substitua por imagem real depois */}
-          <img src="DSC_1209.jpg" alt="Dra. Laís Santos Albergaria" className="dentist1-img"/>
+          <img src="dentista1.jpeg" alt="Dra. Laís Santos Albergaria" className="dentist1-img" />
         </div>
 
       </div>

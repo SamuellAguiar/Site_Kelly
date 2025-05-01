@@ -5,7 +5,7 @@ function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
 
   const links = [
-    {nome: "Início", href: "#home" },
+    { nome: "Início", href: "#home" },
     { nome: "Sobre Nós", href: "#sobre-nos" },
     { nome: "Contato", href: "#contato" },
   ];
@@ -20,7 +20,9 @@ function Navbar() {
 
       <nav className="navbar">
         <div className="logo">
-          <img src="/19.png" alt="Logo" />
+          <a href="#home" onClick={fecharMenu}>
+            <img src="logo.png" alt="Logo" />
+          </a>
         </div>
 
         <div className={`menu-icon ${menuAberto ? "aberto" : ""}`} onClick={toggleMenu}>
