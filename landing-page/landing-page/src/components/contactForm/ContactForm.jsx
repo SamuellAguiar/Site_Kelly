@@ -76,7 +76,7 @@ function ContactForm() {
 
                                    <input
                                         type="email"
-                                        placeholder="E-mail de contato" 
+                                        placeholder="E-mail de contato"
                                         {...register('email', {
                                              required: 'Email é Necessário',
                                              pattern: {
@@ -98,20 +98,7 @@ function ContactForm() {
                               </form>
                          </div>
 
-                         <div className="form-right">
-                              <p><strong>EMAIL:</strong><br />teste01@teste.0101</p>
-                                   <div className="footer-icons">
-                                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                             <Instagram />
-                                        </a>
-                                        <a href="mailto:example@email.com" >
-                                             <Email />
-                                        </a>
-                                        <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-                                             <Language />
-                                        </a>
-                              </div>
-                         </div>
+
                     </div>
                </div>
           </>

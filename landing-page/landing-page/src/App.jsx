@@ -10,16 +10,16 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div>
+      <ScrollToTop />
       <Navbar />
-        <Home />
-        <AboutUs />
-        <Dentista1 />
-        <Dentista2 />
-        <ContactForm />
-        <ScrollToTop />
-        <Footer />
-    </>
+      <Home />
+      <AboutUs />
+      <Dentista1 />
+      <Dentista2 />
+      <ContactForm />
+      <Footer />
+    </div>
   );
 }
 
