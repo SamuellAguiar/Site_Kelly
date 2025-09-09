@@ -32,7 +32,7 @@
 
 .dentist1-texto {
   flex: 1;
-  color: #f4f4f4;
+  color: #000;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
