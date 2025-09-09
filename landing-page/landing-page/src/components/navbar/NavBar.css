@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #000;
+  background-color: #807064;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,6 @@
   object-fit: contain;
 }
 
-/* Ícone animado (hambúrguer / X) */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -50,7 +49,6 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Links de navegação */
 .navbar-links {
   list-style: none;
   display: flex;
