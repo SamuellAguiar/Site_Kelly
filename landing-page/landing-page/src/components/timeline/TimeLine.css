@@ -1,0 +1,152 @@
+/* Fundo só da seção */
+.timeline-section {
+     background-color: #807064;
+     /* cor de fundo */
+     padding: 4rem 1rem;
+     /* espaçamento interno da seção */
+}
+
+/* Container central da timeline */
+.timeline-container {
+     max-width: 1000px;
+     margin: 0 auto;
+     font-family: "Arial", sans-serif;
+}
+
+.timeline-title {
+     text-align: center;
+     font-size: 2.2rem;
+     margin-bottom: 3rem;
+     font-weight: bold;
+     color: #000;
+}
+
+/* Linha central */
+.timeline {
+     position: relative;
+     margin: 0;
+     padding: 0;
+}
+
+.timeline::before {
+     content: "";
+     position: absolute;
+     left: 50%;
+     top: 0;
+     bottom: 0;
+     width: 4px;
+     background: #a89c91;
+     transform: translateX(-50%);
+}
+
+/* Cada item */
+.timeline-item {
+     position: relative;
+     width: 100%;
+     display: flex;
+     margin-bottom: 3rem;
+     opacity: 0;
+     transform: translateY(40px);
+     transition: all 0.6s ease-out;
+}
+
+.timeline-item.show {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+/* Bolinha centralizada na linha */
+.timeline-icon {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 16px;
+     height: 16px;
+     background: #C2B5AB;
+     border-radius: 50%;
+     z-index: 2;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Conteúdo dos cards */
+.timeline-content {
+     background: #f7f3f0;
+     /* cor suave */
+     padding: 1.2rem 1.6rem;
+     border-radius: 14px;
+     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+     width: 45%;
+     transition: transform 0.3s ease;
+     word-wrap: break-word; /* Quebra palavras longas */
+     
+}
+
+.timeline-content:hover {
+     transform: translateY(-4px);
+}
+
+/* Alternância: lado esquerdo / direito */
+.timeline-item:nth-child(odd) .timeline-content {
+     margin-right: auto;
+     margin-left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+     margin-left: auto;
+     margin-right: 0;
+}
+
+/* Categoria */
+.timeline-category {
+     font-size: 0.85rem;
+     font-weight: bold;
+     color: #6b4f4f;
+     text-transform: uppercase;
+     display: block;
+     margin-bottom: 0.4rem;
+}
+
+/* Animação inicial */
+.timeline-item.hidden {
+     opacity: 0;
+     transform: translateY(40px);
+}
+
+.timeline-item.hidden.show {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+     .timeline::before {
+          left: 50%; /* Centralizar a linha no mobile */
+          transform: translateX(-50%);
+     }
+
+     .timeline-item {
+          flex-direction: row; /* Alterar para layout horizontal */
+          align-items: center;
+     }
+
+     .timeline-item:nth-child(odd) .timeline-content {
+          margin-right: auto;
+          margin-left: 0;
+     }
+
+     .timeline-item:nth-child(even) .timeline-content {
+          margin-left: auto;
+          margin-right: 0;
+     }
+
+     .timeline-item .timeline-content {
+          width: 45%; /* Manter largura dos cards */
+     }
+
+     .timeline-icon {
+          left: 50%; /* Centralizar ícones */
+          transform: translateX(-50%);
+     }
+}
+
+/* FIM DA TIMELINE */
