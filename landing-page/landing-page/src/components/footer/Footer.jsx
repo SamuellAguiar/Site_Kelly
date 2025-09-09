@@ -1,11 +1,9 @@
-import React from 'react';
-import { Instagram, Email, Language } from '@mui/icons-material';
 import './Footer.css';
 
 function Footer() {
      return (
           <footer className="footer">
-               <p className="footer-text"><b>All Rights Reserved © 2025</b></p>
+               <p className="footer-text"><b>Feito por <a href="https://samuellaguiar.vercel.app/" target="_blank" rel="noopener noreferrer">Samuell Aguiar</a></b></p>
           </footer>
      );
 }

@@ -1,8 +1,13 @@
 .footer {
-     background-color: #000000;
+     background-color: #C2B5AB;
      color: #ffffff;
      text-align: center;
      padding: 20px 0;
+}
+
+.footer a {
+     text-decoration: none; /* Remove a linha do link */
+     color: inherit; /* Usa a cor do texto ao invés da cor padrão do link */
 }
 
 .footer-icons {
