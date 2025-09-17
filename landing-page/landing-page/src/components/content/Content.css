@@ -1,0 +1,133 @@
+/* Container geral */
+.content-section {
+     padding: 40px 20px;
+     background-color: #807064;
+     color: #1f1f1f;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+/* Título principal */
+.content-section h2 {
+     font-size: 1.9rem;
+     text-align: center;
+     margin-bottom: 24px;
+     color: #231f1f;
+}
+
+/* Lista principal */
+.checklist {
+     list-style: none;
+     padding: 0;
+     margin: 0 auto;
+     max-width: 900px;
+}
+
+/* Cada seção (teoria / prática) */
+.section {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     padding-bottom: 18px;
+     margin-bottom: 26px;
+}
+
+/* Cabeçalho da seção: ícone + título (mesma linha) */
+.section-header {
+     display: flex;
+     align-items: center;
+     /* garante ícone alinhado verticalmente com o texto */
+     gap: 12px;
+     margin-bottom: 12px;
+}
+
+/* Ícone principal (na linha do título) */
+.section-header .icon {
+     color: #2c2c2c;
+     font-size: 1.6rem;
+     flex-shrink: 0;
+     line-height: 1;
+     /* evita deslocamento interno do ícone */
+     transition: color .25s ease, transform .15s ease;
+}
+
+/* Título da seção */
+.section-header strong {
+     font-size: 1.08rem;
+     font-weight: 700;
+     color: #231f1f;
+     line-height: 1.1;
+}
+
+/* Hover da seção (título + ícone) */
+.section:hover .section-header .icon,
+.section:hover .section-header strong {
+     color: #C2B5AB;
+}
+
+/* Sublista (itens detalhados) */
+.sublist {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     padding-left: 36px;
+     /* indentação visual */
+}
+
+/* Cada subitem: ícone pequeno + texto */
+.sublist li {
+     display: flex;
+     align-items: center;
+     /* ícone e texto alinhados no centro da linha */
+     gap: 10px;
+     padding: 10px 0;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+     font-size: 1rem;
+     line-height: 1.4;
+}
+
+/* Remove borda do último subitem */
+.sublist li:last-child {
+     border-bottom: none;
+}
+
+/* Ícone pequeno dos subitens */
+.sublist .subicon {
+     color: #2c2c2c;
+     font-size: 1.05rem;
+     flex-shrink: 0;
+     line-height: 1;
+     transition: color .25s ease, transform .15s ease;
+}
+
+/* Hover do subitem (texto + ícone pequeno) */
+.sublist li:hover,
+.sublist li:hover .subicon {
+     color: #C2B5AB;
+}
+
+/* Deixe o texto do subitem como bloco flexível (para alinhamento/overflow) */
+.sublist li span {
+     display: block;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+     .content-section {
+          padding: 24px 12px;
+     }
+
+     .checklist {
+          max-width: 100%;
+     }
+
+     .section-header strong {
+          font-size: 1rem;
+     }
+
+     .section-header .icon {
+          font-size: 1.4rem;
+     }
+
+     .sublist .subicon {
+          font-size: 1rem;
+     }
+}
