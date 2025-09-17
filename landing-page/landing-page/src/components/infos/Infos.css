@@ -1,0 +1,95 @@
+/* Seção ocupa 100% da largura da tela */
+.infos-section {
+     width: 100%;
+     background-color: #C2B5AB;
+     padding: 60px 30px;
+     /* mais espaço nas bordas */
+     box-sizing: border-box;
+}
+
+/* Centraliza e limita largura do conteúdo */
+.infos-container {
+     max-width: 900px;
+     margin: 0 auto;
+     color: #1f1f1f;
+}
+
+/* Título principal */
+.infos-title {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-size: 1.8rem;
+     margin-bottom: 28px;
+     /* mais espaço depois do título */
+     color: #231f1f;
+}
+
+/* Subtítulos */
+.infos-subtitle {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 1.3rem;
+     margin-top: 32px;
+     /* mais espaço antes do subtítulo */
+     margin-bottom: 12px;
+     color: #3a3a3a;
+}
+
+.infos-icon {
+     color: #2c2c2c;
+}
+
+/* Parágrafos mais espaçados e legíveis */
+.infos-container p {
+     margin: 12px 0;
+     /* espaçamento maior */
+     font-size: 1.1rem;
+     line-height: 1.8;
+     /* aumenta o espaço entre linhas */
+}
+
+.consultar-datas {
+     margin-top: 16px;
+     font-style: italic;
+     font-weight: 500;
+     color: #5a4c43;
+}
+
+/* Destaque leve para palavras importantes */
+.infos-container p strong {
+     color: #3b2f28;
+     font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+     .infos-section {
+          padding: 40px 16px;
+          /* reduz para telas pequenas */
+     }
+
+     .infos-title {
+          font-size: 1.4rem;
+     }
+
+     .infos-subtitle {
+          font-size: 1.1rem;
+     }
+
+     .infos-container p {
+          font-size: 1rem;
+          line-height: 1.6;
+     }
+}
+
+@media (max-width: 768px) {
+  .infos-container {
+    text-align: center; /* Centraliza o texto no mobile */
+  }
+
+  .infos-title, .infos-subtitle {
+    justify-content: center; /* Centraliza os títulos e subtítulos */
+  }
+}
