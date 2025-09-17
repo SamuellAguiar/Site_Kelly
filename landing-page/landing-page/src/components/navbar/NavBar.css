@@ -67,7 +67,7 @@
 }
 
 .navbar-links li a:hover {
-  color: #807064;
+  color: #C2B5AB;
 }
 
 /* Responsividade */
@@ -80,7 +80,7 @@
     position: absolute;
     top: 90px;
     right: 0;
-    background-color: #000;
+    background-color: #807064;
     flex-direction: column;
     width: 220px;
     padding: 20px;
