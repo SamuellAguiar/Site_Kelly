@@ -6,7 +6,9 @@ import Dentista2 from './components/dentista2/Dentista2';
 import ContactForm from './components/contactForm/ContactForm';
 import Footer from './components/footer/Footer';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
-import Timeline from './components/timeline/TimeLine';
+import Content from './components/content/Content';
+import Infos from './components/infos/Infos';
+import Cards from './components/Cards/Cards';
 import './App.css';
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
       <AboutUs />
       <Dentista1 />
       <Dentista2 />
-      <Timeline />
+      <Content />
+      <Infos />
+      <Cards />
       <ContactForm />
       <Footer />
     </div>
