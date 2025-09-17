@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Content from './components/content/Content';
 import Infos from './components/infos/Infos';
-import Cards from './components/Cards/Cards';
+import Cards from './components/cards/Cards';
 import './App.css';
 
 function App() {
