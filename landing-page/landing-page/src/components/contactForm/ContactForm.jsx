@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { Instagram, Email, Language } from '@mui/icons-material';
 import './ContactForm.css';
 
 function ContactForm() {
      const { register, handleSubmit, reset, formState: { errors } } = useForm();
-     const [status, setStatus] = useState(null); // 'success' | 'error' | null
+     const [status, setStatus] = useState(null);
 
      const onSubmit = async (data) => {
           if (data._gotcha) return;
@@ -33,7 +32,6 @@ function ContactForm() {
           }
      };
 
-     // Scroll to top and auto-hide alert
      useEffect(() => {
           if (status) {
                window.scrollTo({ top: 0, behavior: 'smooth' });
