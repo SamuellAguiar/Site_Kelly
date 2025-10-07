@@ -1,7 +1,7 @@
 import React from 'react';
 import './Content.css';
-import CheckIcon from '@mui/icons-material/Check'; // ícone do título
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'; // ícone dos subitens
+import CheckIcon from '@mui/icons-material/Check'; 
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'; 
 
 const Content = () => {
      return (
