@@ -35,10 +35,9 @@ const Cards = () => {
         </div>
       </div>
 
-      {/* Botão de inscrição */}
       <div className="inscricao-container">
         <a
-          href="https://samuellaguiar.vercel.app/" // 👉 coloque aqui o link real
+          href="https://samuellaguiar.vercel.app/" 
           target="_blank"
           rel="noopener noreferrer"
           className="inscricao-button"
