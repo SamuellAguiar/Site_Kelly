@@ -2,7 +2,7 @@ import React from 'react';
 import './Infos.css';
 import InfoIcon from '@mui/icons-material/Info';
 import EventIcon from '@mui/icons-material/Event';
-import PeopleIcon from '@mui/icons-material/People'; // Ícone para "Para quem é"
+import PeopleIcon from '@mui/icons-material/People'; 
 
 const Infos = () => {
   return (
@@ -22,9 +22,10 @@ const Infos = () => {
         <p>Serão dois dias de curso (sexta e sábado):</p>
         <p><strong>08:00 – 12:00</strong> e <strong>14:00 – 18:00</strong></p>
 
-        <p className="consultar-datas">Consultar próximas datas.</p>
+        <p className="datas-confirmadas">
+          Primeira turma: <strong>28 e 29 de Novembro</strong>
+        </p>
 
-        {/* NOVA SEÇÃO - Para quem é */}
         <h4 className="infos-subtitle">
           <PeopleIcon className="infos-icon" /> Para quem é?
         </h4>
