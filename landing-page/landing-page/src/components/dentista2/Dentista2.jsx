@@ -1,4 +1,3 @@
-import React from "react";
 import "./Dentista2.css";
 
 const Dentista2 = () => {
@@ -6,7 +5,6 @@ const Dentista2 = () => {
     <section className="dentist2-section">
       <div className="dentist2-container">
         <div className="dentist2-image">
-          {/* Substitua por imagem real depois */}
           <img src="dentista2.jpeg" alt="Dra. Kelly Krysley de Oliveira Aguiar" className="dentist2-img" />
         </div>
         <div className="dentist2-texto">
