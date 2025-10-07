@@ -8,7 +8,6 @@
 .sobre-mim-container {
   display: flex;
   flex-direction: row;
-  /* padrão: imagem à esquerda */
   max-width: 1000px;
   background-color: #C2B5AB;
   border-radius: 20px;
@@ -27,10 +26,10 @@
 
 .sobre-mim-image img {
   width: 100%;
-  max-width: 600px; /* Aumentado de 400px */
+  max-width: 600px; 
   height: auto;
   border-radius: 20px;
-  object-fit: cover; /* Adicionado para manter proporção sem distorção */
+  object-fit: cover;
 }
 
 
@@ -53,11 +52,9 @@
   line-height: 1.6;
 }
 
-/* === RESPONSIVO: imagem embaixo do texto === */
 @media (max-width: 768px) {
   .sobre-mim-container {
     flex-direction: column-reverse;
-    /* texto em cima, imagem embaixo */
     text-align: center;
   }
 
