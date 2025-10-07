@@ -13,12 +13,11 @@
   font-weight: 700;
 }
 
-/* Agora os cards ficam lado a lado */
 .values-container {
   display: flex;
   justify-content: center;
   gap: 24px;
-  flex-wrap: wrap; /* permite quebrar para baixo em telas menores */
+  flex-wrap: wrap; 
   max-width: 900px;
   margin: 0 auto;
 }
@@ -47,7 +46,6 @@
   line-height: 1.4;
 }
 
-/* Preço antigo cortado */
 .old-price {
   font-size: 1rem;
   text-decoration: line-through;
@@ -55,7 +53,6 @@
   margin-bottom: 4px;
 }
 
-/* Preço novo em destaque */
 .new-price {
   font-size: 1.1rem;
   font-weight: bold;
@@ -63,21 +60,18 @@
   margin: 4px 0;
 }
 
-/* Texto pequeno para pagamento */
 .payment-info {
   font-size: 0.85rem;
   color: #333;
   margin-top: 4px;
 }
 
-/* Destaque do primeiro card */
 .highlight {
   border: 2px solid #1f1f1f;
   background: #C2B5AB;
   box-shadow: 0 0 18px rgba(255, 107, 53, 0.3);
 }
 
-/* Badge chamativa */
 .highlight-badge {
   display: inline-block;
   background: linear-gradient(90deg, #ff6b35, #ff9a60);
@@ -90,7 +84,6 @@
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }
 
-/* Responsividade */
 @media (max-width: 700px) {
   .values-container {
     flex-direction: column;
@@ -100,14 +93,14 @@
 
 @media (max-width: 768px) {
   .values-title {
-    font-size: 1.5rem; /* Reduz tamanho da fonte no título */
+    font-size: 1.5rem; 
   }
 
   .value-card h4 {
-    font-size: 1.1rem; /* Reduz tamanho da fonte nos cards */
+    font-size: 1.1rem; 
   }
 
   .value-card p {
-    font-size: 0.9rem; /* Reduz tamanho da fonte no texto dos cards */
+    font-size: 0.9rem; 
   }
 }
