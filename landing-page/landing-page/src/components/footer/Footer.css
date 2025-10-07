@@ -6,8 +6,8 @@
 }
 
 .footer a {
-     text-decoration: none; /* Remove a linha do link */
-     color: inherit; /* Usa a cor do texto ao invés da cor padrão do link */
+     text-decoration: none; 
+     color: inherit; 
 }
 
 .footer-icons {
@@ -23,7 +23,6 @@
 
 .footer-icons a:hover {
      color: #C2B5AB;
-     /* cor suave ao passar o mouse */
 }
 
 .footer-text {
