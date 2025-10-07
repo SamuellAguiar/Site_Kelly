@@ -49,7 +49,6 @@
   line-height: 1.6;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .dentist2-container {
     flex-direction: column;
