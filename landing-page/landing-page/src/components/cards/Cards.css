@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   gap: 24px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -84,6 +84,28 @@
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }
 
+.inscricao-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.inscricao-button {
+  background: linear-gradient(90deg, #ff6b35, #ff9a60);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  transition: 0.3s ease;
+}
+
+.inscricao-button:hover {
+  background: linear-gradient(90deg, #ff7e4c, #ffb080);
+  transform: translateY(-3px);
+}
+
+
 @media (max-width: 700px) {
   .values-container {
     flex-direction: column;
@@ -93,14 +115,14 @@
 
 @media (max-width: 768px) {
   .values-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .value-card h4 {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 
   .value-card p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }

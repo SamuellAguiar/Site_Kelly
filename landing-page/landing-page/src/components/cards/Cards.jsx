@@ -34,6 +34,18 @@ const Cards = () => {
           </p>
         </div>
       </div>
+
+      {/* Botão de inscrição */}
+      <div className="inscricao-container">
+        <a
+          href="https://samuellaguiar.vercel.app/" // 👉 coloque aqui o link real
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inscricao-button"
+        >
+          Quero me inscrever
+        </a>
+      </div>
     </section>
   );
 };
