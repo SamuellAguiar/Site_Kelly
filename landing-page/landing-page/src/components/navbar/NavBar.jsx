@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./NavBar.css";
 
 function Navbar() {
@@ -18,7 +18,6 @@ function Navbar() {
 
   return (
     <>
-      {/* Fundo escurecido */}
       {menuAberto && <div className="overlay" onClick={fecharMenu}></div>}
 
       <nav className="navbar">
