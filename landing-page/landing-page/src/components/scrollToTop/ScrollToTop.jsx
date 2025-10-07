@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import './ScrollToTop.css';
 
@@ -28,7 +28,6 @@ function ScrollToTop() {
           
           window.addEventListener('scroll', handleScroll, { passive: true });
           
-          // Verificar posição inicial
           setTimeout(() => {
                toggleVisibility();
           }, 100);
