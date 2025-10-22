@@ -1,6 +1,9 @@
 import "./Cards.css";
 
+
 const Cards = () => {
+  const whatsappNumber = '+5532984680550';
+
   return (
     <section className="values-section" id="valores">
       <h3 className="values-title">Investimento</h3>
@@ -37,7 +40,7 @@ const Cards = () => {
 
       <div className="inscricao-container">
         <a
-          href="https://samuellaguiar.vercel.app/" 
+          href={`https://wa.me/${whatsappNumber}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inscricao-button"
