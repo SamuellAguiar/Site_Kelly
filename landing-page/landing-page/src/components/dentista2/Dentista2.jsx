@@ -12,7 +12,7 @@ const Dentista2 = () => {
             <ul>
               <li><strong>Graduação:</strong> Universidade Federal de Juiz de Fora.</li>
               <li><strong>Especialização em Dentística:</strong> FOB - USP.</li>
-              <li>Atua como especialista em dentistica em consultório, tendo também como foco a fotografia odontológica e o tratamento do bruxismo, por possuir atualizações nessas áreas.</li>
+              <li>Atua como especialista em dentística em consultório, tendo também como foco a fotografia odontológica e o tratamento do bruxismo, por possuir atualizações nessas áreas.</li>
             </ul>
         </div>
       </div>
