@@ -2,7 +2,9 @@ import "./Cards.css";
 
 
 const Cards = () => {
+  
   const whatsappNumber = '+5532984680550';
+  const defaultMessage = 'Olá, tenho interesse na inscrição do curso e gostaria de mais informações. Obrigado!';
 
   return (
     <section className="values-section" id="valores">
@@ -40,7 +42,7 @@ const Cards = () => {
 
       <div className="inscricao-container">
         <a
-          href={`https://wa.me/${whatsappNumber}`}
+          href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inscricao-button"
