@@ -6,7 +6,7 @@
 
 ## 😄 Veja o site
 
-Visite o site em: [Link do Site](https://kellyelais.vercel.app/)
+Visite o site em: [Link do Site](https://kellyelais.com/)
 
 ## 📝 Licença
 
