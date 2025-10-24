@@ -1,48 +1,23 @@
 import { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import './ScrollToTop.css';
 
 function ScrollToTop() {
-     const [visible, setVisible] = useState(false);
-
-     const toggleVisibility = () => {
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-          if (scrollTop > 100) {
-               setVisible(true);
-          } else {
-               setVisible(false);
-          }
-     };
-
-     const scrollToTop = () => {
-          window.scrollTo({
-               top: 0,
-               behavior: 'smooth',
-          });
-     };
-
-     useEffect(() => {
-          const handleScroll = () => {
-               toggleVisibility();
-          };
-          
-          window.addEventListener('scroll', handleScroll, { passive: true });
-          
-          setTimeout(() => {
-               toggleVisibility();
-          }, 100);
-          
-          return () => {
-               window.removeEventListener('scroll', handleScroll);
-          };
-     }, []);
+     // Substitua o número abaixo pelo seu número do WhatsApp com DDI e DDD, exemplo: 5511999999999
+     const whatsappNumber = '+5532984680550';
+     const whatsappMessage = encodeURIComponent('Olá, tenho interesse na inscrição do curso e gostaria de mais informações. Obrigado!');
+     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
      return (
-          visible && (
-               <button className="scroll-to-top" onClick={scrollToTop}>
-                    <FaArrowUp size={20} />
-               </button>
-          )
+          <a
+               className="scroll-to-top whatsapp-btn"
+               href={whatsappLink}
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Fale comigo no WhatsApp"
+          >
+               <FaWhatsapp size={28} />
+          </a>
      );
 }
 
