@@ -31,7 +31,7 @@ const Cards = () => {
           <p className="new-price">4x de R$ 500,00</p>
 
           <p className="payment-info">
-            <em>Divido no cartão de crédito em até 4x sem juros</em>
+            <em>Parcelado no cartão de crédito em até 4x sem juros</em>
           </p>
 
           <p className="card-description">
