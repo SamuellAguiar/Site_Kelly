@@ -14,6 +14,11 @@ body {
   min-height: 100vh;
 }
 
+/* Espaço no topo para a navbar fixa */
+body {
+  padding-top: 90px; /* igual à altura da .navbar */
+}
+
 h1,
 h2,
 h3,
