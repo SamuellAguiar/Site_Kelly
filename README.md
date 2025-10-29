@@ -1,4 +1,4 @@
-# Kelly e Laís
+# Resinas Compostas em Dentes Anteriores Kelly e Laís
 
 <img src="imagem.png" alt="Exemplo imagem">
 
