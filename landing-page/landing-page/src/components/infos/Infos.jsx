@@ -13,7 +13,7 @@ const Infos = () => {
         </h3>
 
         <p><strong>Carga Horária:</strong> 16 horas – com certificado de conclusão.</p>
-        <p><strong>Material:</strong> Todo material fornecido pelo curso. Levar apenas micromotor, contra-ângulo e fotopolimerizador.</p>
+        <p><strong>Material:</strong> Todo material fornecido pelo curso. Levar apenas contra-ângulo.</p>
 
         <h4 className="infos-subtitle">
           <EventIcon className="infos-icon" /> Datas e Horários
