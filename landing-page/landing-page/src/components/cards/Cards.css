@@ -84,9 +84,39 @@
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }
 
+/* Lista de benefícios usada nos cards */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 6px 0;
+  text-align: left;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #2f2f2f;
+}
+
+.benefit-item::before {
+  content: "•";
+  color: #ff6b35;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
 .inscricao-container {
   text-align: center;
   margin-top: 40px;
+}
+
+.cta-text {
+  margin-bottom: 12px;
+  color: #1f1f1f;
+  font-weight: 600;
 }
 
 .inscricao-button {
