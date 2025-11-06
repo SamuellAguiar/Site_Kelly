@@ -2,7 +2,6 @@ import "./Cards.css";
 
 
 const Cards = () => {
-  
   const whatsappNumber = '+5532984680550';
   const defaultMessage = 'Olá, tenho interesse na inscrição do curso e gostaria de mais informações. Obrigado!';
 
@@ -11,32 +10,17 @@ const Cards = () => {
       <h3 className="values-title">Investimento</h3>
 
       <div className="values-container">
+        {/* Card de benefícios para a primeira turma */}
         <div className="value-card highlight">
           <span className="highlight-badge">🔥 Primeira Turma</span>
 
-          <p className="old-price">De: R$ 2.300,00</p>
-          <p className="new-price">Por: R$ 1.800,00</p>
+          <ul className="benefits-list">
+            <li className="benefit-item">Valor promocional exclusivo para primeira turma!</li>
+            <i><li className="benefit-item">Opções de pagamento à vista ou parcelado</li></i>
+            <strong><li className="benefit-item" >Parcelamos em até 4 vezes</li></strong>
+          </ul>
 
-          <p className="payment-info">
-            <em>Pagamento <strong>à vista</strong> via PIX ou boleto</em>
-          </p>
-
-          <p className="card-description">
-            Aproveite o <strong>preço exclusivo</strong> da primeira turma pagando à vista!
-          </p>
-        </div>
-
-        <div className="value-card">
-          <h4>Parcelado</h4>
-          <p className="new-price">4x de R$ 500,00</p>
-
-          <p className="payment-info">
-            <em>Parcelado no cartão de crédito em até 4x sem juros</em>
-          </p>
-
-          <p className="card-description">
-            Ideal para quem prefere flexibilidade no pagamento.
-          </p>
+          <p className="card-description">Vagas limitadas — garanta sua participação conversando através do nosso WhatsApp.</p>
         </div>
       </div>
 
@@ -50,7 +34,7 @@ const Cards = () => {
           Quero me inscrever
         </a>
       </div>
-    </section>
+    </section >
   );
 };
 
