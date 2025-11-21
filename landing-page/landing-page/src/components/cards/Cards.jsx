@@ -19,7 +19,7 @@ const Cards = () => {
             <strong><li className="benefit-item" >Parcelamos de forma facilitada em até 12x</li></strong>
           </ul>
 
-          <p className="card-description">Vagas limitadas — garanta sua participação conversando através do nosso WhatsApp.</p>
+          <p className="card-description">Vagas limitadas — garanta sua participação através do nosso WhatsApp.</p>
         </div>
       </div>
 
