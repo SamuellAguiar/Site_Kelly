@@ -16,8 +16,7 @@ const Cards = () => {
 
           <ul className="benefits-list">
             <li className="benefit-item">Valor promocional exclusivo para primeira turma!</li>
-            <i><li className="benefit-item">Opções de pagamento à vista ou parcelado</li></i>
-            <strong><li className="benefit-item" >Parcelamos em até 4 vezes</li></strong>
+            <strong><li className="benefit-item" >Parcelamos de forma facilitada em até 12x</li></strong>
           </ul>
 
           <p className="card-description">Vagas limitadas — garanta sua participação conversando através do nosso WhatsApp.</p>
