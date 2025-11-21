@@ -5,6 +5,10 @@ import PeopleIcon from '@mui/icons-material/People';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Infos = () => {
+
+  const whatsappNumber = '+5532984680550';
+  const defaultMessage = 'Olá, tenho interesse na inscrição do curso e gostaria de mais informações. Obrigado!';
+
   return (
     <section className="infos-section" id="info">
       <div className="infos-container">
@@ -19,12 +23,17 @@ const Infos = () => {
           <EventIcon className="infos-icon" /> Datas e Horários
         </h4>
 
-        <p>Serão dois dias de curso (sexta e sábado):</p>
-        <p><strong>08:00 – 12:00</strong> e <strong>14:00 – 18:00</strong></p>
-
-        <p className="datas-confirmadas">
-          Primeira turma: <strong>28 e 29 de Novembro</strong>
-        </p>
+        <p>Entre em contato para maiores informações.</p>
+              <div className="inscricao-container">
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inscricao-link-infos"
+                >
+                  Clique aqui para mais informações
+                </a>
+              </div>
 
         <h4 className="infos-subtitle">
           <PeopleIcon className="infos-icon" /> Para quem é?
